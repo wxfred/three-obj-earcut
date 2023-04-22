@@ -49,7 +49,6 @@ function triangulate(text) {
       }
 
       const triangles = earcut(coords, null, 3)
-      console.log(coords, triangles)
       for (let i = 0; i < triangles.length; i += 3) {
         finalLines.push(`f ${tokens[triangles[i] + 1]} ${tokens[triangles[i + 1] + 1]} ${tokens[triangles[i + 2] + 1]}`)
       }
