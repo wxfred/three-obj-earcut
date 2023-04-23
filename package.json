@@ -1,6 +1,6 @@
 {
   "name": "three-obj-earcut",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Triangulates obj text, depends on three.js and earcut.",
   "main": "src/index.js",
   "scripts": {
