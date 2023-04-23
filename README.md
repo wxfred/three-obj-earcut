@@ -10,6 +10,8 @@
 
 Triangulates obj text, depends on [three.js](https://github.com/mrdoob/three.js) and [earcut](https://github.com/mapbox/earcut), supports convex and concave polygon without holes.
 
+Make sure your obj file contains normal coords, the first vertex's normal in a face will be used for rotation (rotate the face to parallel to the XY plane), because earcut handles 3D data as if it was projected onto the XY plane.
+
 ## Install
 
 ```bash
@@ -19,7 +21,7 @@ npm install --save three-obj-earcut
 ## Usage
 
 ```js
-import triangulate = require('three-obj-earcut')
+import triangulate from 'three-obj-earcut'
 const result = triangulate(objText)
 ```
 

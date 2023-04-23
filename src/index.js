@@ -36,7 +36,7 @@ function triangulate(text) {
         normal = normal ? normal : normals[parseInt(indexTokens[2]) - 1]
       }
       
-      // rotate vertices in the same face to parallel the XY plane, because
+      // rotate vertices in the same face to parallel to the XY plane, because
       // Note that Earcut is a 2D triangulation algorithm, and handles 3D data as if it was projected onto the XY plane (with Z component ignored)
       for (let i = 0; i < coords.length; i += 3) {
         vFrom.set(normal[0], normal[1], normal[2])
